@@ -1,0 +1,10 @@
+version: "3"
+services:
+    shishi-zekki-alert:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./src:/src
+        tty: true
+        command: /bin/bash -c "python main.py"
