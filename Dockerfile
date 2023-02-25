@@ -1,4 +1,4 @@
-FROM python:3.9-slim-bullseye
+FROM python:3.8-slim-bullseye
 COPY ./src /src
 WORKDIR /src
-RUN pip install twitter python-dotenv
+RUN pip install python-dotenv requests requests-oauthlib
