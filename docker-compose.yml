@@ -8,3 +8,5 @@ services:
             - ./src:/src
         tty: true
         command: /bin/bash -c "python main.py"
+        environment:
+            TZ: Asia/Tokyo
