@@ -24,6 +24,5 @@ res = twitter.get(url, params = params)
 if res.status_code == 200:
     tl = json.loads(res.text)
     for i in range(len(tl["data"])):
-        print("-----")
-        print(tl["data"][i]["text"])
-        print(tl["data"][i]["id"])
+        if tl["data"][i]["text"].find(os.getenv("TWITTER_KEYWORD")) >= 0:
+            print(tl["data"][i]["id"])
