@@ -2,9 +2,9 @@
 
 ## 概要
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">おはようございます🌞 <a href="https://t.co/JVTuwe5Fc2">pic.twitter.com/JVTuwe5Fc2</a></p>&mdash; ぴﾞっﾞぴﾞびえ(꜆ ˙ᗜ˙ )꜆ (@shishi_zibie) <a href="https://twitter.com/shishi_zibie/status/1636629615778357248?ref_src=twsrc%5Etfw">March 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">おはようございます🌞 <a href="https://t.co/JVTuwe5Fc2">pic.twitter.com/JVTuwe5Fc2</a></p>&mdash; ぴﾞっﾞぴﾞびえ(꜆ ˙ᗜ˙ )꜆ (@shishi_zibie) <a href="https://twitter.com/shishi_zibie/status/1636629615778357248?ref_src=twsrc%5Etfw">March 17, 2023</a></blockquote>
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">2023/03/17 16:25 絶起<a href="https://twitter.com/hashtag/%E3%81%97%E3%81%97%E7%B5%B6%E8%B5%B7%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#しし絶起アラート</a></p>&mdash; arkw (@arkw0) <a href="https://twitter.com/arkw0/status/1636629842987991040?ref_src=twsrc%5Etfw">March 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">2023/03/17 16:25 絶起<a href="https://twitter.com/hashtag/%E3%81%97%E3%81%97%E7%B5%B6%E8%B5%B7%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#しし絶起アラート</a></p>&mdash; arkw (@arkw0) <a href="https://twitter.com/arkw0/status/1636629842987991040?ref_src=twsrc%5Etfw">March 17, 2023</a></blockquote>
 
 特定ユーザのタイムラインを定期巡回し、キーワードが含まれる時に日時・テキスト・ハッシュタグの 3 点を自動ツイートします。
 
