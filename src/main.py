@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from requests_oauthlib import OAuth1Session
 
 APP_NAME = "shishi-zekki-alert"
-APP_VERSION = "1.0"
+APP_VERSION = "1.1"
 APP_COPYRIGHT = "(c) 2023 Sora Arakawa all rights reserved."
 SAVE_FILE_PATH = "/src/savedata"
 
@@ -25,10 +25,10 @@ def main():
         "user.fields": "name",
         "max_results": 10,
     }
-    tweet_id = ""
+    tweet_id = []
     if os.path.isfile(SAVE_FILE_PATH):
         f = open(SAVE_FILE_PATH, "r")
-        tweet_id = f.read()
+        tweet_id.append(f.read())
         f.close()
     print(APP_NAME)
     print("Version " + APP_VERSION)
@@ -41,14 +41,16 @@ def main():
         if res.status_code == 200:
             tl = json.loads(res.text)
             for i in range(len(tl["data"])):
-                if tl["data"][i]["text"].find(os.getenv("TWITTER_KEYWORD")) >= 0 and tweet_id != tl["data"][i]["id"]:
+                if tl["data"][i]["text"].find(os.getenv("TWITTER_KEYWORD")) >= 0 and (tl["data"][i]["id"] in tweet_id) == False:
                     payload = {"text": f"{dt_now.strftime('%Y/%m/%d %H:%M')} {TWEET_TEXT}\n{TWEET_HASHTAG}"}
                     response = twitter.post("https://api.twitter.com/2/tweets", json = payload)
                     print("Automatically tweet: " + tl["data"][i]["id"])
                     f = open(SAVE_FILE_PATH, "w")
                     f.write(tl["data"][i]["id"])
                     f.close()
-                    tweet_id = tl["data"][i]["id"]
+                    tweet_id.append(tl["data"][i]["id"])
+                    if len(tweet_id) > 20:
+                        tweet_id.pop(0)
                     break
         time.sleep(60)
 
