@@ -7,6 +7,7 @@ services:
         volumes:
             - ./src:/src
         tty: true
+        restart: always
         command: /bin/bash -c "python main.py"
         environment:
             TZ: Asia/Tokyo

@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from requests_oauthlib import OAuth1Session
 
 APP_NAME = "shishi-zekki-alert"
-APP_VERSION = "1.1"
+APP_VERSION = "1.1.1"
 APP_COPYRIGHT = "(c) 2023 Sora Arakawa all rights reserved."
 SAVE_FILE_PATH = "/src/savedata"
 
